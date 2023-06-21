@@ -102,11 +102,20 @@ img{
 }
 
 @media (max-width: 480px) {
+    body{
+        height: 100vh;
+    }
+
+    .fundo{
+        height: 100vh;
+    }
+
     .principal{
         display: block;
         justify-content: center;
         text-align: center;
         align-items: center;
+        height: 100vh;
     }
 
     .sidebar {
@@ -148,7 +157,6 @@ img{
     }
 
     .info{
-        height: 70%;
         font-size: 15px;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
