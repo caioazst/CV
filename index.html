@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="Caio1.png">
+        <title>Caio Azeredo</title>
+    </head>
+    <body>
+        <main class="fundo">
+            <div class="container principal">
+                <div class="sidebar">
+                    <div class="base_perfil">
+                        <div class="perfil">
+                            <img src="Caio1.png">
+                        </div>
+                    </div>
+                    <ul>
+                        <li onclick="exibir('sobre')"><a href="#">Sobre</a></li>
+                        <li onclick="exibir('exp')"><a href="#">Experiência</a></li>
+                        <li onclick="exibir('edu')"><a href="#">Educação</a></li>
+                        <li onclick="exibir('hab')"><a href="#">Habilidades</a></li>
+                        <li onclick="exibir('cont')"><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div id="sobre" class="info exibir">
+                    <div class="info2">
+                        <h1>Sobre</h1>
+                        <p>Meu nome é Caio Azeredo, tenho 25 anos.
+                        </p>
+                        <p>Gosto de resolver problemas. <br>
+                           Sempre gostei de resolver coisas que quebrem a cabeça mas que no fim traga uma satisfação de "consegui".
+                        </p>
+                        <p>Estou numa área que gosto bastante e muitas das coisas que sei ou estou aprendendo, vieram por curiosidade.
+                        </p>
+                    </div>
+                </div>
+                <div id="exp" class="info ocultar">
+                    <div class="info2">
+                        <h1>Experiência</h1>
+                        <p>Trabalho como Analista de Sistemas por volta de 4 anos.</p> 
+                        <p>Nesse tempo aprendi a trabalhar com Metodologias Ágeis como por exemplo o Scrum, 
+                            Ter bons Relacionamentos em Equipe, Tecnologias Genexus, JavaScript, Html, Css, SQL Oracle e também a repassar conhecimento a novos integrantes da equipe.
+                        </p>
+                        <p>Como trabalhamos muito encima do Genexus, a ferramenta possibilitava desenvolvermos o back e o front-end juntos.
+                        </p>
+                    </div>
+                </div>
+                <div id="edu" class="info ocultar">
+                    <div class="info2">
+                        <h1>Educação</h1>
+                        <ul>
+                            <li>Graduado em Análise e Desenvolvimento de Sistemas pela UNA.</li>
+                            <li>Profissional em Design Gráfico pela Saga.</li>
+                            <li>Certificado Analista Genexus pela própria Genexus.</li>
+                            <li>Certificado Scrum Fundamentals pela SCRUMstudy - Accreditation Body for Scrum and Agile.</li><br>
+                            <li>Cursos em Andamento
+                                <ul>
+                                    <li>Front-End Completo (Danki Code).</li>
+                                    <li>JavaScript Moderno.</li>
+                                    <li>Banco de Dados.</li>
+                                    <li>NodeJS.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="hab" class="info ocultar">
+                    <div class="info2">
+                        <h1>Habilidades</h1>
+                        <ul>
+                            <li>Front-end
+                                <ul>
+                                    <li>HTML, CSS, Bootstrap, JavaScript, JQuery, GeneXus.</li>
+                                </ul>
+                            </li>
+                            <li>Back-end
+                                <ul>
+                                    <li>PHP, GeneXus, SQL Oracle, MySQL.</li>
+                                </ul>
+                            </li>
+                            <li>Design Gráfico
+                                <ul>
+                                    <li>Photoshop, Illustrator.</li>
+                                </ul>
+                            </li><br>
+                            <li>Habilidades em Aprendizagem
+                                <ul>
+                                    <li>NodeJS, AJAX, React, Firebase, MongoDB</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="cont" class="info ocultar">
+                    <div class="info2">
+                        <h1>Contato</h1>
+                        <p>Celular: 31 9 9404-1169
+                        </br>E-mail: caioazst@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            function exibir(id){
+                const ocultar = document.querySelectorAll('.info');
+                ocultar.forEach((elemento) => {
+                    elemento.classList.add('ocultar');
+                });
+
+                var exibir = document.getElementById(id);
+                exibir.classList.remove('ocultar');
+            };
+        </script>
+    </body>
+</html>
